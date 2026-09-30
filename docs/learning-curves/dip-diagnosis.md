@@ -57,7 +57,7 @@ The default update's mean exact Bernoulli KL on batch states was **0.01641**. Ab
 
 ## Scope of the conclusion
 
-The experiments identify a harmful actor update, a major causal contribution from its directional offset, physical failure through cart drift, and delayed reporting by the moving average. They do not uniquely separate finite-rollout sampling error, critic/advantage-estimation error, and optimizer dynamics as the origin of the misleading update direction. Critic error against the fixed batch targets decreased, which does not prove those targets accurately represented future reward.
+The experiments identify a harmful actor update, a major causal contribution from its directional offset, physical failure through cart drift, and delayed reporting by the moving average. **Whether sampling noise, value-prediction error, or optimizer dynamics originally favored that change remains unresolved.** Critic error against the fixed batch targets decreased, which does not prove those targets accurately represented future reward.
 
 Intervals measure episode-evaluation uncertainty conditional on these frozen policies. They are not uncertainty across independently trained policies, and they do not assume rewards or learning curves are normally distributed. The bias result was confirmed on an independent holdout after declaring the comparison. Source-gradient checks and exact arithmetic/RNG replay found no implementation bug in the tested PPO, GAE, or CartPole calculations. These experiments did not change the app's training behavior.
 

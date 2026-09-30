@@ -30,6 +30,10 @@ Shares depend on this sample, distance, and imposed group count. They do not est
 
 ![The sampled curve distribution](sampled-curve-distribution.png)
 
-At 20,480 steps, the overall training-score median was 280.225, with pointwise 10th–90th percentiles 208.685–378.77. At the final horizon, all training means equaled the 500-step ceiling. No universal normal distribution was assumed or fitted.
+There is **no universal normal-distribution rule**. Scores can be skewed or have several peaks. [Research on RL score distributions](https://arxiv.org/html/2108.13264v4).
+
+Here, the distribution around 20,000 steps looks roughly bell-shaped, but by 81,920 steps all 128 sampled runs had a last-20-episodes training average of 500—a spike rather than a bell. “Roughly bell-shaped” describes the histogram visually; no normal model was fitted or tested.
+
+At 20,480 steps, the overall training-score median was 280.225, with pointwise 10th–90th percentiles 208.685–378.77. The final 500-point spike describes these sampled training averages, not a guarantee of every future evaluation episode's reward.
 
 The [complete ensemble data](../../experiments/curve-analysis/results.json), [compact ensemble summary](../../experiments/curve-analysis/summary.json), and [reproduction instructions](../../experiments/README.md) are included. Confidence intervals for fresh checkpoint evaluation measure episode randomness conditional on those fixed policies, not variation across training seeds.

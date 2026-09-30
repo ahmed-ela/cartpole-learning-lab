@@ -36,9 +36,17 @@ The numerical learner was checked across ten random seeds. After 81,920 environm
 
 [Read the measured diagnosis of a learning dip](docs/learning-curves/dip-diagnosis.md). Replaying one representative run showed that a policy update introduced a harmful directional bias: the cart drifted off the track while the pole stayed mostly upright. An independent 2,000-episode controller intervention nearly eliminated the first major regression. The recent-20-episodes chart reported the decline late, after the current policy had begun recovering.
 
+**Whether sampling noise, value-prediction error, or optimizer dynamics originally favored that change remains unresolved.**
+
 ![Measured CartPole dip diagnosis](docs/learning-curves/dip-diagnosis.png)
 
 The [experiment overview](docs/learning-curves/README.md) also presents 128 independently seeded learning curves, three representative similarity groups, and evaluation uncertainty. The groups are a descriptive summary, not three universal learning patterns. [Reproduction scripts](experiments/README.md) preserve the exact PPO implementation and seeds; they do not change the interactive app's behavior.
+
+There is **no universal normal-distribution rule**. Scores can be skewed or have several peaks. [Research on RL score distributions](https://arxiv.org/html/2108.13264v4).
+
+Here, the distribution around 20,000 steps looks roughly bell-shaped, but by 81,920 steps all 128 sampled runs had a last-20-episodes training average of 500—a spike rather than a bell. “Roughly bell-shaped” describes the histogram visually; no normal model was fitted or tested.
+
+![The sampled curve distribution](docs/learning-curves/sampled-curve-distribution.png)
 
 ## Source
 
