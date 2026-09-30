@@ -1,0 +1,25 @@
+{
+  "timestamp": "2026-09-30T15:30:53.872Z",
+  "node": "v26.0.0",
+  "source": "dist/rl.js",
+  "sourceSha256": "cf8745bbc2faf82b0b05ed817867d0bfd339c09455567b95dab5a767d63b67d3",
+  "n": 128,
+  "updates": 80,
+  "stepsPerRun": 81920,
+  "workers": 3,
+  "seedSampling": "128 unique uniformly sampled 32-bit seeds from crypto.randomBytes; reproducible values in seeds.json",
+  "settings": {
+    "rollout": 1024,
+    "epochs": 8,
+    "batch": 64,
+    "actorLR": 0.001,
+    "criticLR": 0.001,
+    "gamma": 0.99,
+    "lambda": 0.95,
+    "clip": 0.2,
+    "entropy": 0.005
+  },
+  "score": "Arithmetic mean of most recent 20 completed training episode returns after each PPO update; completion score capped at 500; episodes in progress excluded.",
+  "evaluation": "20 fresh sampled-policy episodes at update 0, 10, 20, 40, 80, separate RNG from training; SHA-256-derived evaluation seed for each training seed/update.",
+  "dipDefinition": "Decrease between adjacent update scores; contiguous decreasing updates form one dip; substantial dip means contiguous drop >=25 points. Drawdown is peak-to-subsequent-trough over full curve."
+}

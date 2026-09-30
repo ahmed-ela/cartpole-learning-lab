@@ -32,6 +32,14 @@ The physics follows [Gymnasium CartPole](https://gymnasium.farama.org/environmen
 
 The numerical learner was checked across ten random seeds. After 81,920 environment steps, all ten achieved 500 steps in each of 100 deterministic and 100 sampled evaluation episodes. Learning is not necessarily monotonic, and these tests are not a guarantee for every possible initialization.
 
+## Learning-curve experiments
+
+[Read the measured diagnosis of a learning dip](docs/learning-curves/dip-diagnosis.md). Replaying one representative run showed that a policy update introduced a harmful directional bias: the cart drifted off the track while the pole stayed mostly upright. An independent 2,000-episode controller intervention nearly eliminated the first major regression. The recent-20-episodes chart reported the decline late, after the current policy had begun recovering.
+
+![Measured CartPole dip diagnosis](docs/learning-curves/dip-diagnosis.png)
+
+The [experiment overview](docs/learning-curves/README.md) also presents 128 independently seeded learning curves, three representative similarity groups, and evaluation uncertainty. The groups are a descriptive summary, not three universal learning patterns. [Reproduction scripts](experiments/README.md) preserve the exact PPO implementation and seeds; they do not change the interactive app's behavior.
+
 ## Source
 
 - `dist/rl.js`: physics, networks, gradients, and PPO.

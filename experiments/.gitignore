@@ -1,0 +1,16 @@
+__pycache__/
+.venv/
+plot-env/
+**/run.log
+curve-analysis/runs.jsonl
+curve-diagnosis/ablation.log
+curve-diagnosis/ablations.json
+curve-diagnosis/audit/epoch-results.json
+curve-diagnosis/evaluation/dataset.json
+curve-diagnosis/evaluation/checkpoint-*-episodes.json
+curve-diagnosis/evaluation/paired-differences.json
+curve-diagnosis/evaluation/trajectory-examples.json
+curve-diagnosis/evaluation/holdout-raw.json
+curve-diagnosis/evaluation/centered-holdout-raw.json
+curve-diagnosis/interventions/results.json
+curve-diagnosis/interventions/rl.rng-accessor.mjs

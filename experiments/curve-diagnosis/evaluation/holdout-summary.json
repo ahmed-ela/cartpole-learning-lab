@@ -1,0 +1,2736 @@
+{
+  "count": 2000,
+  "datasetSeed": "cartpole-diagnosis-holdout-v1",
+  "selection": "Checkpoint contrasts fixed before collecting this independent holdout cohort; main cohort used to identify the contrasts.",
+  "checkpoints": [
+    {
+      "update": 14,
+      "returns": {
+        "n": 2000,
+        "mean": 328.5165,
+        "sd": 108.32934205895208,
+        "se": 2.4223177280164387,
+        "ci95": [
+          323.7688444939749,
+          333.26415550602513
+        ],
+        "method": "Normal approximation for the mean, from the sample variance; not a claim that returns or learning curves are Gaussian."
+      },
+      "returnQuantiles": {
+        "p10": 202,
+        "median": 305,
+        "p90": 500
+      },
+      "hit500": {
+        "n": 334,
+        "fraction": 0.167,
+        "ci95": [
+          0.15129549177258156,
+          0.18398126171673285
+        ]
+      },
+      "nonterminalCap": {
+        "n": 333,
+        "fraction": 0.1665,
+        "ci95": [
+          0.150815969870158,
+          0.18346270066643766
+        ]
+      },
+      "causes": {
+        "cart": {
+          "n": 1643,
+          "fraction": 0.8215,
+          "ci95": [
+            0.8041059649418224,
+            0.837661373656332
+          ],
+          "cartFailureDirections": {
+            "left": 1369,
+            "right": 274
+          },
+          "duration": {
+            "n": 1643,
+            "mean": 294.94765672550216,
+            "sd": 82.64541128448379,
+            "se": 2.038918955980719,
+            "ci95": [
+              290.95144900438396,
+              298.94386444662035
+            ],
+            "method": "Normal approximation for the mean, from the sample variance; not a claim that returns or learning curves are Gaussian."
+          },
+          "durationMedian": 279,
+          "finalAbsX": {
+            "n": 1643,
+            "mean": 2.4118664828625396,
+            "median": 2.41007393804805,
+            "p10": 2.4020836357534128,
+            "p90": 2.4239386645607217
+          },
+          "finalAbsAngleDegrees": {
+            "n": 1643,
+            "mean": 2.6210902689333895,
+            "median": 2.1969629839397373,
+            "p10": 0.5086500124656202,
+            "p90": 5.3926563158459295
+          },
+          "meanAbsX": {
+            "n": 1643,
+            "mean": 0.7349672712573044,
+            "median": 0.7326314703793743,
+            "p10": 0.5311473530811163,
+            "p90": 0.9363562813250387
+          },
+          "meanAbsAngleDegrees": {
+            "n": 1643,
+            "mean": 2.1966431502450607,
+            "median": 2.1488872111063353,
+            "p10": 1.7745158169820672,
+            "p90": 2.6992364897555134
+          },
+          "maxAbsX": {
+            "n": 1643,
+            "mean": 2.4118664828625396,
+            "median": 2.41007393804805,
+            "p10": 2.4020836357534128,
+            "p90": 2.4239386645607217
+          },
+          "maxAbsVelocity": {
+            "n": 1643,
+            "mean": 1.7118833284865467,
+            "median": 1.685438964751734,
+            "p10": 1.3402225568117716,
+            "p90": 2.074794523414385
+          },
+          "meanAbsVelocity": {
+            "n": 1643,
+            "mean": 0.533368494572415,
+            "median": 0.5226806234803909,
+            "p10": 0.41246422687753487,
+            "p90": 0.6694423997889345
+          },
+          "firstNearRailStep": {
+            "n": 1643,
+            "mean": 260.642118076689,
+            "median": 243,
+            "p10": 171,
+            "p90": 381
+          },
+          "nearRailOutwardActionFraction": {
+            "n": 1643,
+            "mean": 0.513743941493977,
+            "median": 0.5128205128205128,
+            "p10": 0.4583333333333333,
+            "p90": 0.5714285714285714
+          }
+        },
+        "pole": {
+          "n": 24,
+          "fraction": 0.012,
+          "ci95": [
+            0.008077154276022635,
+            0.017793883870480226
+          ],
+          "cartFailureDirections": {
+            "left": 0,
+            "right": 0
+          },
+          "duration": {
+            "n": 24,
+            "mean": 247.25,
+            "sd": 138.48944395496906,
+            "se": 28.269039370953546,
+            "ci95": [
+              191.84370095538623,
+              302.6562990446138
+            ],
+            "method": "Normal approximation for the mean, from the sample variance; not a claim that returns or learning curves are Gaussian."
+          },
+          "durationMedian": 256,
+          "finalAbsX": {
+            "n": 24,
+            "mean": 1.0520167948508654,
+            "median": 0.7974085271468251,
+            "p10": 0.13765100297215166,
+            "p90": 2.275207146896048
+          },
+          "finalAbsAngleDegrees": {
+            "n": 24,
+            "mean": 12.30688833822344,
+            "median": 12.242595916957786,
+            "p10": 12.071320868533848,
+            "p90": 12.63571584493754
+          },
+          "meanAbsX": {
+            "n": 24,
+            "mean": 0.38139072288697884,
+            "median": 0.3432546030599868,
+            "p10": 0.07467426362053199,
+            "p90": 0.7285271092885071
+          },
+          "meanAbsAngleDegrees": {
+            "n": 24,
+            "mean": 2.5695702471232167,
+            "median": 2.286878527043014,
+            "p10": 1.9868638810051986,
+            "p90": 3.102777425640348
+          },
+          "maxAbsX": {
+            "n": 24,
+            "mean": 1.0767200157059884,
+            "median": 0.8658646411062727,
+            "p10": 0.17181258211454248,
+            "p90": 2.275207146896048
+          },
+          "maxAbsVelocity": {
+            "n": 24,
+            "mean": 1.3220628721661112,
+            "median": 1.2311058802338417,
+            "p10": 0.9122791942947464,
+            "p90": 1.6351237870504693
+          },
+          "meanAbsVelocity": {
+            "n": 24,
+            "mean": 0.4050375110433239,
+            "median": 0.355955895217115,
+            "p10": 0.27917273705045254,
+            "p90": 0.6026698636547664
+          },
+          "firstNearRailStep": {
+            "n": 8,
+            "mean": 275.125,
+            "median": 246,
+            "p10": 168.5,
+            "p90": 453.6
+          },
+          "nearRailOutwardActionFraction": {
+            "n": 8,
+            "mean": 0.5774868867541282,
+            "median": 0.5202702702702703,
+            "p10": 0.45755968169761274,
+            "p90": 0.7103448275862068
+          }
+        },
+        "both": {
+          "n": 0,
+          "fraction": 0,
+          "ci95": [
+            1.0842021724855044e-19,
+            0.001917047281252934
+          ],
+          "cartFailureDirections": {
+            "left": 0,
+            "right": 0
+          },
+          "duration": {
+            "n": 0,
+            "mean": null,
+            "sd": null,
+            "se": null,
+            "ci95": null
+          },
+          "durationMedian": null,
+          "finalAbsX": {
+            "n": 0,
+            "mean": null,
+            "median": null,
+            "p10": null,
+            "p90": null
+          },
+          "finalAbsAngleDegrees": {
+            "n": 0,
+            "mean": null,
+            "median": null,
+            "p10": null,
+            "p90": null
+          },
+          "meanAbsX": {
+            "n": 0,
+            "mean": null,
+            "median": null,
+            "p10": null,
+            "p90": null
+          },
+          "meanAbsAngleDegrees": {
+            "n": 0,
+            "mean": null,
+            "median": null,
+            "p10": null,
+            "p90": null
+          },
+          "maxAbsX": {
+            "n": 0,
+            "mean": null,
+            "median": null,
+            "p10": null,
+            "p90": null
+          },
+          "maxAbsVelocity": {
+            "n": 0,
+            "mean": null,
+            "median": null,
+            "p10": null,
+            "p90": null
+          },
+          "meanAbsVelocity": {
+            "n": 0,
+            "mean": null,
+            "median": null,
+            "p10": null,
+            "p90": null
+          },
+          "firstNearRailStep": {
+            "n": 0,
+            "mean": null,
+            "median": null,
+            "p10": null,
+            "p90": null
+          },
+          "nearRailOutwardActionFraction": {
+            "n": 0,
+            "mean": null,
+            "median": null,
+            "p10": null,
+            "p90": null
+          }
+        },
+        "cap": {
+          "n": 333,
+          "fraction": 0.1665,
+          "ci95": [
+            0.150815969870158,
+            0.18346270066643766
+          ],
+          "cartFailureDirections": {
+            "left": 0,
+            "right": 0
+          },
+          "duration": {
+            "n": 333,
+            "mean": 500,
+            "sd": 0,
+            "se": 0,
+            "ci95": [
+              500,
+              500
+            ],
+            "method": "Normal approximation for the mean, from the sample variance; not a claim that returns or learning curves are Gaussian."
+          },
+          "durationMedian": 500,
+          "finalAbsX": {
+            "n": 333,
+            "mean": 1.1470787142096641,
+            "median": 1.1220971146036018,
+            "p10": 0.18410310628628176,
+            "p90": 2.1266767121788352
+          },
+          "finalAbsAngleDegrees": {
+            "n": 333,
+            "mean": 1.9842523682378668,
+            "median": 1.4309056063668624,
+            "p10": 0.21251788878592115,
+            "p90": 4.356665487090067
+          },
+          "meanAbsX": {
+            "n": 333,
+            "mean": 0.5703611750843176,
+            "median": 0.5245655425656679,
+            "p10": 0.23933205592426515,
+            "p90": 0.9678450742010853
+          },
+          "meanAbsAngleDegrees": {
+            "n": 333,
+            "mean": 1.9164837148240514,
+            "median": 1.8930209016484245,
+            "p10": 1.6102558565508365,
+            "p90": 2.216835453086647
+          },
+          "maxAbsX": {
+            "n": 333,
+            "mean": 1.4173380244237288,
+            "median": 1.4143532455261583,
+            "p10": 0.6377870937246304,
+            "p90": 2.2280485302914115
+          },
+          "maxAbsVelocity": {
+            "n": 333,
+            "mean": 1.3042202282283342,
+            "median": 1.286245618182136,
+            "p10": 0.9900783384879219,
+            "p90": 1.6338034212463166
+          },
+          "meanAbsVelocity": {
+            "n": 333,
+            "mean": 0.3395292537705597,
+            "median": 0.32629856136775437,
+            "p10": 0.2709450732113267,
+            "p90": 0.42866251906010927
+          },
+          "firstNearRailStep": {
+            "n": 94,
+            "mean": 426.20212765957444,
+            "median": 461,
+            "p10": 289,
+            "p90": 494
+          },
+          "nearRailOutwardActionFraction": {
+            "n": 94,
+            "mean": 0.45892977456358836,
+            "median": 0.4851574147154257,
+            "p10": 0.3458333333333333,
+            "p90": 0.5333333333333333
+          }
+        }
+      }
+    },
+    {
+      "update": 15,
+      "returns": {
+        "n": 2000,
+        "mean": 181.714,
+        "sd": 41.2507335147844,
+        "se": 0.9223944426078674,
+        "ci95": [
+          179.9061401129487,
+          183.5218598870513
+        ],
+        "method": "Normal approximation for the mean, from the sample variance; not a claim that returns or learning curves are Gaussian."
+      },
+      "returnQuantiles": {
+        "p10": 142,
+        "median": 176,
+        "p90": 231
+      },
+      "hit500": {
+        "n": 1,
+        "fraction": 0.0005,
+        "ci95": [
+          0.00008826773070546787,
+          0.0028268625032662133
+        ]
+      },
+      "nonterminalCap": {
+        "n": 1,
+        "fraction": 0.0005,
+        "ci95": [
+          0.00008826773070546787,
+          0.0028268625032662133
+        ]
+      },
+      "causes": {
+        "cart": {
+          "n": 1907,
+          "fraction": 0.9535,
+          "ci95": [
+            0.9433703066271119,
+            0.9618909314887917
+          ],
+          "cartFailureDirections": {
+            "left": 1907,
+            "right": 0
+          },
+          "duration": {
+            "n": 1907,
+            "mean": 183.7881489250131,
+            "sd": 38.0472066376835,
+            "se": 0.8712593074229694,
+            "ci95": [
+              182.08051206126876,
+              185.49578578875744
+            ],
+            "method": "Normal approximation for the mean, from the sample variance; not a claim that returns or learning curves are Gaussian."
+          },
+          "durationMedian": 177,
+          "finalAbsX": {
+            "n": 1907,
+            "mean": 2.4169875369296396,
+            "median": 2.4158355020786604,
+            "p10": 2.40291670634345,
+            "p90": 2.43272972785103
+          },
+          "finalAbsAngleDegrees": {
+            "n": 1907,
+            "mean": 4.2949609958776085,
+            "median": 4.105652652337082,
+            "p10": 1.0424040376942922,
+            "p90": 7.8269630297808455
+          },
+          "meanAbsX": {
+            "n": 1907,
+            "mean": 0.7114825842872938,
+            "median": 0.7164611164107304,
+            "p10": 0.5844341208527785,
+            "p90": 0.8291300514796663
+          },
+          "meanAbsAngleDegrees": {
+            "n": 1907,
+            "mean": 3.2197891892147434,
+            "median": 3.1498726880505665,
+            "p10": 2.4862872648911996,
+            "p90": 4.0507355199166275
+          },
+          "maxAbsX": {
+            "n": 1907,
+            "mean": 2.4169875369296396,
+            "median": 2.4158355020786604,
+            "p10": 2.40291670634345,
+            "p90": 2.43272972785103
+          },
+          "maxAbsVelocity": {
+            "n": 1907,
+            "mean": 2.149277950000188,
+            "median": 2.163056624695236,
+            "p10": 1.8187596355474585,
+            "p90": 2.55604826046813
+          },
+          "meanAbsVelocity": {
+            "n": 1907,
+            "mean": 0.7567360714182683,
+            "median": 0.7509705731851996,
+            "p10": 0.6176334670742535,
+            "p90": 0.9065922653723265
+          },
+          "firstNearRailStep": {
+            "n": 1907,
+            "mean": 163.62873623492396,
+            "median": 156,
+            "p10": 127,
+            "p90": 210
+          },
+          "nearRailOutwardActionFraction": {
+            "n": 1907,
+            "mean": 0.5348837962187396,
+            "median": 0.53125,
+            "p10": 0.45,
+            "p90": 0.625
+          }
+        },
+        "pole": {
+          "n": 90,
+          "fraction": 0.045,
+          "ci95": [
+            0.03675381704471326,
+            0.05499069598122689
+          ],
+          "cartFailureDirections": {
+            "left": 0,
+            "right": 0
+          },
+          "duration": {
+            "n": 90,
+            "mean": 134.27777777777777,
+            "sd": 60.82726099701927,
+            "se": 6.411756286003514,
+            "ci95": [
+              121.71096637956259,
+              146.84458917599295
+            ],
+            "method": "Normal approximation for the mean, from the sample variance; not a claim that returns or learning curves are Gaussian."
+          },
+          "durationMedian": 135,
+          "finalAbsX": {
+            "n": 90,
+            "mean": 1.1949770865224023,
+            "median": 1.349760209060853,
+            "p10": 0.1182454848175328,
+            "p90": 2.1997149861286367
+          },
+          "finalAbsAngleDegrees": {
+            "n": 90,
+            "mean": 12.292214103066135,
+            "median": 12.207474859470182,
+            "p10": 12.025194304863327,
+            "p90": 12.668239292880017
+          },
+          "meanAbsX": {
+            "n": 90,
+            "mean": 0.3616522921590874,
+            "median": 0.411808493888571,
+            "p10": 0.0523590900441031,
+            "p90": 0.6461072349023151
+          },
+          "meanAbsAngleDegrees": {
+            "n": 90,
+            "mean": 3.4051007399499205,
+            "median": 3.1781830145102594,
+            "p10": 2.6155457410515046,
+            "p90": 4.432873316629222
+          },
+          "maxAbsX": {
+            "n": 90,
+            "mean": 1.2005771511612087,
+            "median": 1.349760209060853,
+            "p10": 0.12374717767131604,
+            "p90": 2.1997149861286367
+          },
+          "maxAbsVelocity": {
+            "n": 90,
+            "mean": 1.469719211806632,
+            "median": 1.5157267506559797,
+            "p10": 0.7804758511653082,
+            "p90": 2.056236168963797
+          },
+          "meanAbsVelocity": {
+            "n": 90,
+            "mean": 0.5171301131831637,
+            "median": 0.5299416168265602,
+            "p10": 0.2658419208308422,
+            "p90": 0.738512333818968
+          },
+          "firstNearRailStep": {
+            "n": 30,
+            "mean": 171.86666666666667,
+            "median": 163.5,
+            "p10": 123.5,
+            "p90": 238.50000000000003
+          },
+          "nearRailOutwardActionFraction": {
+            "n": 30,
+            "mean": 0.5991501145228093,
+            "median": 0.5555555555555556,
+            "p10": 0.45284090909090907,
+            "p90": 0.8200000000000003
+          }
+        },
+        "both": {
+          "n": 2,
+          "fraction": 0.001,
+          "ci95": [
+            0.0002742789176520342,
+            0.003638934269038394
+          ],
+          "cartFailureDirections": {
+            "left": 2,
+            "right": 0
+          },
+          "duration": {
+            "n": 2,
+            "mean": 179.5,
+            "sd": 33.23401871576773,
+            "se": 23.499999999999996,
+            "ci95": [
+              133.44084636330874,
+              225.55915363669126
+            ],
+            "method": "Normal approximation for the mean, from the sample variance; not a claim that returns or learning curves are Gaussian."
+          },
+          "durationMedian": 179.5,
+          "finalAbsX": {
+            "n": 2,
+            "mean": 2.4072413690169414,
+            "median": 2.4072413690169414,
+            "p10": 2.405312982275433,
+            "p90": 2.40916975575845
+          },
+          "finalAbsAngleDegrees": {
+            "n": 2,
+            "mean": 12.063703909776903,
+            "median": 12.063703909776903,
+            "p10": 12.016142374479442,
+            "p90": 12.111265445074364
+          },
+          "meanAbsX": {
+            "n": 2,
+            "mean": 0.6502865025301473,
+            "median": 0.6502865025301473,
+            "p10": 0.6267952496823014,
+            "p90": 0.6737777553779932
+          },
+          "meanAbsAngleDegrees": {
+            "n": 2,
+            "mean": 3.9632638923188974,
+            "median": 3.9632638923188974,
+            "p10": 3.4311140251425756,
+            "p90": 4.495413759495219
+          },
+          "maxAbsX": {
+            "n": 2,
+            "mean": 2.4072413690169414,
+            "median": 2.4072413690169414,
+            "p10": 2.405312982275433,
+            "p90": 2.40916975575845
+          },
+          "maxAbsVelocity": {
+            "n": 2,
+            "mean": 2.0947144664593553,
+            "median": 2.0947144664593553,
+            "p10": 2.024585978967691,
+            "p90": 2.1648429539510197
+          },
+          "meanAbsVelocity": {
+            "n": 2,
+            "mean": 0.775835731568804,
+            "median": 0.775835731568804,
+            "p10": 0.7035477828138598,
+            "p90": 0.8481236803237484
+          },
+          "firstNearRailStep": {
+            "n": 2,
+            "mean": 161,
+            "median": 161,
+            "p10": 144.2,
+            "p90": 177.8
+          },
+          "nearRailOutwardActionFraction": {
+            "n": 2,
+            "mean": 0.5669642857142857,
+            "median": 0.5669642857142857,
+            "p10": 0.5633928571428571,
+            "p90": 0.5705357142857143
+          }
+        },
+        "cap": {
+          "n": 1,
+          "fraction": 0.0005,
+          "ci95": [
+            0.00008826773070546787,
+            0.0028268625032662133
+          ],
+          "cartFailureDirections": {
+            "left": 0,
+            "right": 0
+          },
+          "duration": {
+            "n": 1,
+            "mean": 500,
+            "sd": 0,
+            "se": 0,
+            "ci95": [
+              500,
+              500
+            ],
+            "method": "Normal approximation for the mean, from the sample variance; not a claim that returns or learning curves are Gaussian."
+          },
+          "durationMedian": 500,
+          "finalAbsX": {
+            "n": 1,
+            "mean": 2.22716685905734,
+            "median": 2.22716685905734,
+            "p10": 2.22716685905734,
+            "p90": 2.22716685905734
+          },
+          "finalAbsAngleDegrees": {
+            "n": 1,
+            "mean": 2.1375657701024653,
+            "median": 2.1375657701024653,
+            "p10": 2.1375657701024653,
+            "p90": 2.1375657701024653
+          },
+          "meanAbsX": {
+            "n": 1,
+            "mean": 0.5721293025904791,
+            "median": 0.5721293025904791,
+            "p10": 0.5721293025904791,
+            "p90": 0.5721293025904791
+          },
+          "meanAbsAngleDegrees": {
+            "n": 1,
+            "mean": 2.870464427538978,
+            "median": 2.870464427538978,
+            "p10": 2.870464427538978,
+            "p90": 2.870464427538978
+          },
+          "maxAbsX": {
+            "n": 1,
+            "mean": 2.22716685905734,
+            "median": 2.22716685905734,
+            "p10": 2.22716685905734,
+            "p90": 2.22716685905734
+          },
+          "maxAbsVelocity": {
+            "n": 1,
+            "mean": 2.1958249658082565,
+            "median": 2.1958249658082565,
+            "p10": 2.1958249658082565,
+            "p90": 2.1958249658082565
+          },
+          "meanAbsVelocity": {
+            "n": 1,
+            "mean": 0.4116143672306827,
+            "median": 0.4116143672306827,
+            "p10": 0.4116143672306827,
+            "p90": 0.4116143672306827
+          },
+          "firstNearRailStep": {
+            "n": 1,
+            "mean": 488,
+            "median": 488,
+            "p10": 488,
+            "p90": 488
+          },
+          "nearRailOutwardActionFraction": {
+            "n": 1,
+            "mean": 0.4166666666666667,
+            "median": 0.4166666666666667,
+            "p10": 0.4166666666666667,
+            "p90": 0.4166666666666667
+          }
+        }
+      }
+    },
+    {
+      "update": 16,
+      "returns": {
+        "n": 2000,
+        "mean": 165.1905,
+        "sd": 37.50055140164893,
+        "se": 0.8385378212781202,
+        "ci95": [
+          163.5469960706202,
+          166.83400392937978
+        ],
+        "method": "Normal approximation for the mean, from the sample variance; not a claim that returns or learning curves are Gaussian."
+      },
+      "returnQuantiles": {
+        "p10": 129,
+        "median": 162,
+        "p90": 208
+      },
+      "hit500": {
+        "n": 0,
+        "fraction": 0,
+        "ci95": [
+          1.0842021724855044e-19,
+          0.001917047281252934
+        ]
+      },
+      "nonterminalCap": {
+        "n": 0,
+        "fraction": 0,
+        "ci95": [
+          1.0842021724855044e-19,
+          0.001917047281252934
+        ]
+      },
+      "causes": {
+        "cart": {
+          "n": 1693,
+          "fraction": 0.8465,
+          "ci95": [
+            0.8300389697890471,
+            0.8616325164450447
+          ],
+          "cartFailureDirections": {
+            "left": 1692,
+            "right": 1
+          },
+          "duration": {
+            "n": 1693,
+            "mean": 170.06792675723568,
+            "sd": 32.395815810790154,
+            "se": 0.7873366028542796,
+            "ci95": [
+              168.52477537193118,
+              171.61107814254018
+            ],
+            "method": "Normal approximation for the mean, from the sample variance; not a claim that returns or learning curves are Gaussian."
+          },
+          "durationMedian": 165,
+          "finalAbsX": {
+            "n": 1693,
+            "mean": 2.4194520248963087,
+            "median": 2.4185634071986297,
+            "p10": 2.4036761873118166,
+            "p90": 2.436028790025849
+          },
+          "finalAbsAngleDegrees": {
+            "n": 1693,
+            "mean": 5.921607392732108,
+            "median": 5.97929602253305,
+            "p10": 2.3012131116888357,
+            "p90": 9.393454420503408
+          },
+          "meanAbsX": {
+            "n": 1693,
+            "mean": 0.6856550287481599,
+            "median": 0.6914317705655488,
+            "p10": 0.5657676766585662,
+            "p90": 0.7917621635339832
+          },
+          "meanAbsAngleDegrees": {
+            "n": 1693,
+            "mean": 3.8014749565446735,
+            "median": 3.7409008961095935,
+            "p10": 2.964457423183361,
+            "p90": 4.702414568468968
+          },
+          "maxAbsX": {
+            "n": 1693,
+            "mean": 2.4194520248963087,
+            "median": 2.4185634071986297,
+            "p10": 2.4036761873118166,
+            "p90": 2.436028790025849
+          },
+          "maxAbsVelocity": {
+            "n": 1693,
+            "mean": 2.351144867367404,
+            "median": 2.367670554909967,
+            "p10": 2.0147797074378913,
+            "p90": 2.736811266993786
+          },
+          "meanAbsVelocity": {
+            "n": 1693,
+            "mean": 0.8139935356327084,
+            "median": 0.807895938330737,
+            "p10": 0.6743940795701321,
+            "p90": 0.9631487427877828
+          },
+          "firstNearRailStep": {
+            "n": 1693,
+            "mean": 152.5558180744241,
+            "median": 147,
+            "p10": 119,
+            "p90": 191
+          },
+          "nearRailOutwardActionFraction": {
+            "n": 1693,
+            "mean": 0.5470448141813348,
+            "median": 0.55,
+            "p10": 0.4375,
+            "p90": 0.6470588235294118
+          }
+        },
+        "pole": {
+          "n": 301,
+          "fraction": 0.1505,
+          "ci95": [
+            0.13550019863222196,
+            0.1668398174173738
+          ],
+          "cartFailureDirections": {
+            "left": 0,
+            "right": 0
+          },
+          "duration": {
+            "n": 301,
+            "mean": 137.41860465116278,
+            "sd": 50.14363554875644,
+            "se": 2.890231103915665,
+            "ci95": [
+              131.75385578049062,
+              143.08335352183494
+            ],
+            "method": "Normal approximation for the mean, from the sample variance; not a claim that returns or learning curves are Gaussian."
+          },
+          "durationMedian": 139,
+          "finalAbsX": {
+            "n": 301,
+            "mean": 1.4574264145134506,
+            "median": 1.6493112490539816,
+            "p10": 0.22968174935126645,
+            "p90": 2.2241740905935083
+          },
+          "finalAbsAngleDegrees": {
+            "n": 301,
+            "mean": 12.280069078407001,
+            "median": 12.224641768828834,
+            "p10": 12.050647653669872,
+            "p90": 12.593974166196835
+          },
+          "meanAbsX": {
+            "n": 301,
+            "mean": 0.44337722445965455,
+            "median": 0.46836620310960503,
+            "p10": 0.10194010239576058,
+            "p90": 0.6846868556064262
+          },
+          "meanAbsAngleDegrees": {
+            "n": 301,
+            "mean": 3.7904156757471035,
+            "median": 3.737067553557067,
+            "p10": 2.8951313767246334,
+            "p90": 4.679816991513735
+          },
+          "maxAbsX": {
+            "n": 301,
+            "mean": 1.465587427212609,
+            "median": 1.6493112490539816,
+            "p10": 0.24813808038968355,
+            "p90": 2.2241740905935083
+          },
+          "maxAbsVelocity": {
+            "n": 301,
+            "mean": 1.6829817943309437,
+            "median": 1.726227579489284,
+            "p10": 0.9794140554178948,
+            "p90": 2.1980644807039145
+          },
+          "meanAbsVelocity": {
+            "n": 301,
+            "mean": 0.61195799079835,
+            "median": 0.6279364617762281,
+            "p10": 0.3445546759851205,
+            "p90": 0.8130559826060869
+          },
+          "firstNearRailStep": {
+            "n": 119,
+            "mean": 149.78151260504202,
+            "median": 148,
+            "p10": 120.8,
+            "p90": 178
+          },
+          "nearRailOutwardActionFraction": {
+            "n": 119,
+            "mean": 0.5769268507279665,
+            "median": 0.55,
+            "p10": 0.4357142857142857,
+            "p90": 0.75
+          }
+        },
+        "both": {
+          "n": 6,
+          "fraction": 0.003,
+          "ci95": [
+            0.0013756299236301083,
+            0.006529915073935308
+          ],
+          "cartFailureDirections": {
+            "left": 6,
+            "right": 0
+          },
+          "duration": {
+            "n": 6,
+            "mean": 182.16666666666666,
+            "sd": 37.32782697488118,
+            "se": 15.239021549226113,
+            "ci95": [
+              152.2987332705537,
+              212.03460006277962
+            ],
+            "method": "Normal approximation for the mean, from the sample variance; not a claim that returns or learning curves are Gaussian."
+          },
+          "durationMedian": 182.5,
+          "finalAbsX": {
+            "n": 6,
+            "mean": 2.411463957550183,
+            "median": 2.4117856279129244,
+            "p10": 2.405524321538346,
+            "p90": 2.4170819231992793
+          },
+          "finalAbsAngleDegrees": {
+            "n": 6,
+            "mean": 12.27969148912284,
+            "median": 12.225652533383098,
+            "p10": 12.142715026774006,
+            "p90": 12.47070690721142
+          },
+          "meanAbsX": {
+            "n": 6,
+            "mean": 0.7509879304987949,
+            "median": 0.7839201115311407,
+            "p10": 0.6243629941213904,
+            "p90": 0.8446806858438538
+          },
+          "meanAbsAngleDegrees": {
+            "n": 6,
+            "mean": 3.5944623686157784,
+            "median": 3.7413534083529685,
+            "p10": 2.625650241293927,
+            "p90": 4.41638345620044
+          },
+          "maxAbsX": {
+            "n": 6,
+            "mean": 2.411463957550183,
+            "median": 2.4117856279129244,
+            "p10": 2.405524321538346,
+            "p90": 2.4170819231992793
+          },
+          "maxAbsVelocity": {
+            "n": 6,
+            "mean": 1.9349912149831276,
+            "median": 1.932302625757788,
+            "p10": 1.6633641927996603,
+            "p90": 2.2093068263919355
+          },
+          "meanAbsVelocity": {
+            "n": 6,
+            "mean": 0.758669341315934,
+            "median": 0.7656939571635446,
+            "p10": 0.5958693603529677,
+            "p90": 0.9144447064312897
+          },
+          "firstNearRailStep": {
+            "n": 6,
+            "mean": 157.83333333333334,
+            "median": 155,
+            "p10": 123,
+            "p90": 195.5
+          },
+          "nearRailOutwardActionFraction": {
+            "n": 6,
+            "mean": 0.5169617130006123,
+            "median": 0.5486111111111112,
+            "p10": 0.43253968253968256,
+            "p90": 0.5697343453510437
+          }
+        },
+        "cap": {
+          "n": 0,
+          "fraction": 0,
+          "ci95": [
+            1.0842021724855044e-19,
+            0.001917047281252934
+          ],
+          "cartFailureDirections": {
+            "left": 0,
+            "right": 0
+          },
+          "duration": {
+            "n": 0,
+            "mean": null,
+            "sd": null,
+            "se": null,
+            "ci95": null
+          },
+          "durationMedian": null,
+          "finalAbsX": {
+            "n": 0,
+            "mean": null,
+            "median": null,
+            "p10": null,
+            "p90": null
+          },
+          "finalAbsAngleDegrees": {
+            "n": 0,
+            "mean": null,
+            "median": null,
+            "p10": null,
+            "p90": null
+          },
+          "meanAbsX": {
+            "n": 0,
+            "mean": null,
+            "median": null,
+            "p10": null,
+            "p90": null
+          },
+          "meanAbsAngleDegrees": {
+            "n": 0,
+            "mean": null,
+            "median": null,
+            "p10": null,
+            "p90": null
+          },
+          "maxAbsX": {
+            "n": 0,
+            "mean": null,
+            "median": null,
+            "p10": null,
+            "p90": null
+          },
+          "maxAbsVelocity": {
+            "n": 0,
+            "mean": null,
+            "median": null,
+            "p10": null,
+            "p90": null
+          },
+          "meanAbsVelocity": {
+            "n": 0,
+            "mean": null,
+            "median": null,
+            "p10": null,
+            "p90": null
+          },
+          "firstNearRailStep": {
+            "n": 0,
+            "mean": null,
+            "median": null,
+            "p10": null,
+            "p90": null
+          },
+          "nearRailOutwardActionFraction": {
+            "n": 0,
+            "mean": null,
+            "median": null,
+            "p10": null,
+            "p90": null
+          }
+        }
+      }
+    },
+    {
+      "update": 18,
+      "returns": {
+        "n": 2000,
+        "mean": 318.4625,
+        "sd": 97.21646524281368,
+        "se": 2.17382624815177,
+        "ci95": [
+          314.20187884497466,
+          322.7231211550253
+        ],
+        "method": "Normal approximation for the mean, from the sample variance; not a claim that returns or learning curves are Gaussian."
+      },
+      "returnQuantiles": {
+        "p10": 205,
+        "median": 299,
+        "p90": 490
+      },
+      "hit500": {
+        "n": 185,
+        "fraction": 0.0925,
+        "ci95": [
+          0.08057157812198121,
+          0.10599081541223992
+        ]
+      },
+      "nonterminalCap": {
+        "n": 185,
+        "fraction": 0.0925,
+        "ci95": [
+          0.08057157812198121,
+          0.10599081541223992
+        ]
+      },
+      "causes": {
+        "cart": {
+          "n": 1756,
+          "fraction": 0.878,
+          "ci95": [
+            0.8629271316619076,
+            0.8916235805934651
+          ],
+          "cartFailureDirections": {
+            "left": 886,
+            "right": 870
+          },
+          "duration": {
+            "n": 1756,
+            "mean": 302.3530751708428,
+            "sd": 79.39803112586158,
+            "se": 1.8947306361984604,
+            "ci95": [
+              298.6394713634892,
+              306.0666789781965
+            ],
+            "method": "Normal approximation for the mean, from the sample variance; not a claim that returns or learning curves are Gaussian."
+          },
+          "durationMedian": 290,
+          "finalAbsX": {
+            "n": 1756,
+            "mean": 2.4132708189904606,
+            "median": 2.411744454014484,
+            "p10": 2.4023355401807187,
+            "p90": 2.42625335684461
+          },
+          "finalAbsAngleDegrees": {
+            "n": 1756,
+            "mean": 3.329746870254839,
+            "median": 2.983190714442779,
+            "p10": 0.6200380296578318,
+            "p90": 6.602268776457686
+          },
+          "meanAbsX": {
+            "n": 1756,
+            "mean": 0.7098768387928248,
+            "median": 0.7120737629469532,
+            "p10": 0.5370708275356273,
+            "p90": 0.8831564800438403
+          },
+          "meanAbsAngleDegrees": {
+            "n": 1756,
+            "mean": 2.361618028738374,
+            "median": 2.328156495851183,
+            "p10": 1.942289765912225,
+            "p90": 2.816671728601917
+          },
+          "maxAbsX": {
+            "n": 1756,
+            "mean": 2.4132708189904606,
+            "median": 2.411744454014484,
+            "p10": 2.4023355401807187,
+            "p90": 2.42625335684461
+          },
+          "maxAbsVelocity": {
+            "n": 1756,
+            "mean": 1.7970143673654366,
+            "median": 1.8121190156407514,
+            "p10": 1.4870260773755384,
+            "p90": 2.1446137173756794
+          },
+          "meanAbsVelocity": {
+            "n": 1756,
+            "mean": 0.5293075393425006,
+            "median": 0.5139617042590177,
+            "p10": 0.4234893432457807,
+            "p90": 0.6554398356392681
+          },
+          "firstNearRailStep": {
+            "n": 1756,
+            "mean": 272.1771070615034,
+            "median": 258,
+            "p10": 179,
+            "p90": 387.5
+          },
+          "nearRailOutwardActionFraction": {
+            "n": 1756,
+            "mean": 0.5207153016574432,
+            "median": 0.5217391304347826,
+            "p10": 0.4594594594594595,
+            "p90": 0.5862068965517241
+          }
+        },
+        "pole": {
+          "n": 58,
+          "fraction": 0.029,
+          "ci95": [
+            0.022500401616129873,
+            0.03730545692281039
+          ],
+          "cartFailureDirections": {
+            "left": 0,
+            "right": 0
+          },
+          "duration": {
+            "n": 58,
+            "mean": 229.01724137931035,
+            "sd": 118.52137143567548,
+            "se": 15.56261850086076,
+            "ci95": [
+              198.51506961248654,
+              259.5194131461342
+            ],
+            "method": "Normal approximation for the mean, from the sample variance; not a claim that returns or learning curves are Gaussian."
+          },
+          "durationMedian": 226.5,
+          "finalAbsX": {
+            "n": 58,
+            "mean": 1.2452116774830917,
+            "median": 1.2638429909897506,
+            "p10": 0.1453963953612279,
+            "p90": 2.262140594777448
+          },
+          "finalAbsAngleDegrees": {
+            "n": 58,
+            "mean": 12.344624874897212,
+            "median": 12.278575572163438,
+            "p10": 12.036398139162765,
+            "p90": 12.730134918485227
+          },
+          "meanAbsX": {
+            "n": 58,
+            "mean": 0.41065669627771245,
+            "median": 0.4102053561796265,
+            "p10": 0.05910131114545293,
+            "p90": 0.693524526427605
+          },
+          "meanAbsAngleDegrees": {
+            "n": 58,
+            "mean": 2.533500763311602,
+            "median": 2.411953884679467,
+            "p10": 1.9433474882536876,
+            "p90": 3.197826680554136
+          },
+          "maxAbsX": {
+            "n": 58,
+            "mean": 1.2619076071113189,
+            "median": 1.2943349971037665,
+            "p10": 0.15622255862227158,
+            "p90": 2.262140594777448
+          },
+          "maxAbsVelocity": {
+            "n": 58,
+            "mean": 1.4462201418851255,
+            "median": 1.3727595236892336,
+            "p10": 1.0731717732686805,
+            "p90": 1.8915471806293107
+          },
+          "meanAbsVelocity": {
+            "n": 58,
+            "mean": 0.414863083869225,
+            "median": 0.3915429500553784,
+            "p10": 0.28906403686956805,
+            "p90": 0.538847228747796
+          },
+          "firstNearRailStep": {
+            "n": 21,
+            "mean": 273.1904761904762,
+            "median": 246,
+            "p10": 192,
+            "p90": 432
+          },
+          "nearRailOutwardActionFraction": {
+            "n": 21,
+            "mean": 0.44373214760043406,
+            "median": 0.4444444444444444,
+            "p10": 0.375,
+            "p90": 0.5454545454545454
+          }
+        },
+        "both": {
+          "n": 1,
+          "fraction": 0.0005,
+          "ci95": [
+            0.00008826773070546787,
+            0.0028268625032662133
+          ],
+          "cartFailureDirections": {
+            "left": 0,
+            "right": 1
+          },
+          "duration": {
+            "n": 1,
+            "mean": 210,
+            "sd": 0,
+            "se": 0,
+            "ci95": [
+              210,
+              210
+            ],
+            "method": "Normal approximation for the mean, from the sample variance; not a claim that returns or learning curves are Gaussian."
+          },
+          "durationMedian": 210,
+          "finalAbsX": {
+            "n": 1,
+            "mean": 2.409652486346877,
+            "median": 2.409652486346877,
+            "p10": 2.409652486346877,
+            "p90": 2.409652486346877
+          },
+          "finalAbsAngleDegrees": {
+            "n": 1,
+            "mean": 12.414097684600431,
+            "median": 12.414097684600431,
+            "p10": 12.414097684600431,
+            "p90": 12.414097684600431
+          },
+          "meanAbsX": {
+            "n": 1,
+            "mean": 0.7580404373238449,
+            "median": 0.7580404373238449,
+            "p10": 0.7580404373238449,
+            "p90": 0.7580404373238449
+          },
+          "meanAbsAngleDegrees": {
+            "n": 1,
+            "mean": 2.474745808603414,
+            "median": 2.474745808603414,
+            "p10": 2.474745808603414,
+            "p90": 2.474745808603414
+          },
+          "maxAbsX": {
+            "n": 1,
+            "mean": 2.409652486346877,
+            "median": 2.409652486346877,
+            "p10": 2.409652486346877,
+            "p90": 2.409652486346877
+          },
+          "maxAbsVelocity": {
+            "n": 1,
+            "mean": 1.916644898032717,
+            "median": 1.916644898032717,
+            "p10": 1.916644898032717,
+            "p90": 1.916644898032717
+          },
+          "meanAbsVelocity": {
+            "n": 1,
+            "mean": 0.5979172183716845,
+            "median": 0.5979172183716845,
+            "p10": 0.5979172183716845,
+            "p90": 0.5979172183716845
+          },
+          "firstNearRailStep": {
+            "n": 1,
+            "mean": 183,
+            "median": 183,
+            "p10": 183,
+            "p90": 183
+          },
+          "nearRailOutwardActionFraction": {
+            "n": 1,
+            "mean": 0.5185185185185185,
+            "median": 0.5185185185185185,
+            "p10": 0.5185185185185185,
+            "p90": 0.5185185185185185
+          }
+        },
+        "cap": {
+          "n": 185,
+          "fraction": 0.0925,
+          "ci95": [
+            0.08057157812198121,
+            0.10599081541223992
+          ],
+          "cartFailureDirections": {
+            "left": 0,
+            "right": 0
+          },
+          "duration": {
+            "n": 185,
+            "mean": 500,
+            "sd": 0,
+            "se": 0,
+            "ci95": [
+              500,
+              500
+            ],
+            "method": "Normal approximation for the mean, from the sample variance; not a claim that returns or learning curves are Gaussian."
+          },
+          "durationMedian": 500,
+          "finalAbsX": {
+            "n": 185,
+            "mean": 1.0769253166194455,
+            "median": 1.032675196821731,
+            "p10": 0.1860884274483968,
+            "p90": 2.0493813899041364
+          },
+          "finalAbsAngleDegrees": {
+            "n": 185,
+            "mean": 2.4274940972789687,
+            "median": 1.9578269619389144,
+            "p10": 0.3482640665417123,
+            "p90": 5.239026952128937
+          },
+          "meanAbsX": {
+            "n": 185,
+            "mean": 0.3529880231972258,
+            "median": 0.3013316149303358,
+            "p10": 0.15417985349622979,
+            "p90": 0.6147884577653939
+          },
+          "meanAbsAngleDegrees": {
+            "n": 185,
+            "mean": 2.045178177788191,
+            "median": 2.030355568673589,
+            "p10": 1.7630020864978824,
+            "p90": 2.3505705826904597
+          },
+          "maxAbsX": {
+            "n": 185,
+            "mean": 1.1622054739053882,
+            "median": 1.0583566911754618,
+            "p10": 0.42127647841441146,
+            "p90": 2.0493813899041364
+          },
+          "maxAbsVelocity": {
+            "n": 185,
+            "mean": 1.3153488230651746,
+            "median": 1.304287360817365,
+            "p10": 1.004490331378213,
+            "p90": 1.6400074647931184
+          },
+          "meanAbsVelocity": {
+            "n": 185,
+            "mean": 0.33226723519792406,
+            "median": 0.32723817258332194,
+            "p10": 0.2789014283322991,
+            "p90": 0.38945163629049995
+          },
+          "firstNearRailStep": {
+            "n": 39,
+            "mean": 478.0769230769231,
+            "median": 485,
+            "p10": 460.4,
+            "p90": 496
+          },
+          "nearRailOutwardActionFraction": {
+            "n": 39,
+            "mean": 0.4782709175453444,
+            "median": 0.5,
+            "p10": 0.281203007518797,
+            "p90": 0.6666666666666666
+          }
+        }
+      }
+    },
+    {
+      "update": 19,
+      "returns": {
+        "n": 2000,
+        "mean": 286.98,
+        "sd": 89.15722127260659,
+        "se": 1.9936160745053864,
+        "ci95": [
+          283.0725842949693,
+          290.8874157050307
+        ],
+        "method": "Normal approximation for the mean, from the sample variance; not a claim that returns or learning curves are Gaussian."
+      },
+      "returnQuantiles": {
+        "p10": 193,
+        "median": 265,
+        "p90": 425.10000000000014
+      },
+      "hit500": {
+        "n": 99,
+        "fraction": 0.0495,
+        "ci95": [
+          0.040827254610808245,
+          0.059900004989600644
+        ]
+      },
+      "nonterminalCap": {
+        "n": 97,
+        "fraction": 0.0485,
+        "ci95": [
+          0.03992009344287708,
+          0.05881100025209431
+        ]
+      },
+      "causes": {
+        "cart": {
+          "n": 1863,
+          "fraction": 0.9315,
+          "ci95": [
+            0.9195819535860573,
+            0.9417636346102213
+          ],
+          "cartFailureDirections": {
+            "left": 216,
+            "right": 1647
+          },
+          "duration": {
+            "n": 1863,
+            "mean": 277.345142243693,
+            "sd": 75.71335321293161,
+            "se": 1.754147275721197,
+            "ci95": [
+              273.9070767597004,
+              280.7832077276856
+            ],
+            "method": "Normal approximation for the mean, from the sample variance; not a claim that returns or learning curves are Gaussian."
+          },
+          "durationMedian": 261,
+          "finalAbsX": {
+            "n": 1863,
+            "mean": 2.4145545784181204,
+            "median": 2.4131132578993975,
+            "p10": 2.4026640255318767,
+            "p90": 2.428151617223593
+          },
+          "finalAbsAngleDegrees": {
+            "n": 1863,
+            "mean": 3.9979805261686856,
+            "median": 3.78648959134434,
+            "p10": 0.8844290978275265,
+            "p90": 7.295428151462049
+          },
+          "meanAbsX": {
+            "n": 1863,
+            "mean": 0.6699684158986857,
+            "median": 0.674555658664873,
+            "p10": 0.4965033001992021,
+            "p90": 0.8303945429644545
+          },
+          "meanAbsAngleDegrees": {
+            "n": 1863,
+            "mean": 2.3401707333154604,
+            "median": 2.298414101456075,
+            "p10": 1.8694555850512533,
+            "p90": 2.8591159058906235
+          },
+          "maxAbsX": {
+            "n": 1863,
+            "mean": 2.4145545784181204,
+            "median": 2.4131132578993975,
+            "p10": 2.4026640255318767,
+            "p90": 2.428151617223593
+          },
+          "maxAbsVelocity": {
+            "n": 1863,
+            "mean": 1.8919056643406094,
+            "median": 1.8682190221365842,
+            "p10": 1.521735412377421,
+            "p90": 2.2474321584260055
+          },
+          "meanAbsVelocity": {
+            "n": 1863,
+            "mean": 0.556051951114647,
+            "median": 0.5466609783291293,
+            "p10": 0.43698127157907235,
+            "p90": 0.6900461431418053
+          },
+          "firstNearRailStep": {
+            "n": 1863,
+            "mean": 251.4825550187869,
+            "median": 234,
+            "p10": 171,
+            "p90": 358.5999999999999
+          },
+          "nearRailOutwardActionFraction": {
+            "n": 1863,
+            "mean": 0.5322015638723165,
+            "median": 0.5263157894736842,
+            "p10": 0.4666666666666667,
+            "p90": 0.6069264069264069
+          }
+        },
+        "pole": {
+          "n": 40,
+          "fraction": 0.02,
+          "ci95": [
+            0.014721726201265444,
+            0.027118639188737373
+          ],
+          "cartFailureDirections": {
+            "left": 0,
+            "right": 0
+          },
+          "duration": {
+            "n": 40,
+            "mean": 219.15,
+            "sd": 108.31283040697083,
+            "se": 17.125762195278508,
+            "ci95": [
+              185.58412288945652,
+              252.7158771105435
+            ],
+            "method": "Normal approximation for the mean, from the sample variance; not a claim that returns or learning curves are Gaussian."
+          },
+          "durationMedian": 233,
+          "finalAbsX": {
+            "n": 40,
+            "mean": 1.5114091087427646,
+            "median": 1.8810060869345047,
+            "p10": 0.17573571175223254,
+            "p90": 2.357702865094196
+          },
+          "finalAbsAngleDegrees": {
+            "n": 40,
+            "mean": 12.273547335799332,
+            "median": 12.227280409037942,
+            "p10": 12.031296023121646,
+            "p90": 12.598900954909318
+          },
+          "meanAbsX": {
+            "n": 40,
+            "mean": 0.44584197491517646,
+            "median": 0.4966109003411627,
+            "p10": 0.07230170448572452,
+            "p90": 0.7544832861548154
+          },
+          "meanAbsAngleDegrees": {
+            "n": 40,
+            "mean": 2.46908394611457,
+            "median": 2.4221450099076476,
+            "p10": 1.9609265008206997,
+            "p90": 3.1580910242568936
+          },
+          "maxAbsX": {
+            "n": 40,
+            "mean": 1.5190481990700058,
+            "median": 1.8810060869345047,
+            "p10": 0.1789510126583475,
+            "p90": 2.357702865094196
+          },
+          "maxAbsVelocity": {
+            "n": 40,
+            "mean": 1.5039648501530234,
+            "median": 1.5639385614158412,
+            "p10": 0.9399113989857001,
+            "p90": 2.068361565734125
+          },
+          "meanAbsVelocity": {
+            "n": 40,
+            "mean": 0.4417023796488981,
+            "median": 0.4594973419767967,
+            "p10": 0.2954086762723681,
+            "p90": 0.6106298161494145
+          },
+          "firstNearRailStep": {
+            "n": 21,
+            "mean": 249.85714285714286,
+            "median": 230,
+            "p10": 175,
+            "p90": 385
+          },
+          "nearRailOutwardActionFraction": {
+            "n": 21,
+            "mean": 0.5683453179224023,
+            "median": 0.5357142857142857,
+            "p10": 0.4583333333333333,
+            "p90": 0.6428571428571429
+          }
+        },
+        "both": {
+          "n": 0,
+          "fraction": 0,
+          "ci95": [
+            1.0842021724855044e-19,
+            0.001917047281252934
+          ],
+          "cartFailureDirections": {
+            "left": 0,
+            "right": 0
+          },
+          "duration": {
+            "n": 0,
+            "mean": null,
+            "sd": null,
+            "se": null,
+            "ci95": null
+          },
+          "durationMedian": null,
+          "finalAbsX": {
+            "n": 0,
+            "mean": null,
+            "median": null,
+            "p10": null,
+            "p90": null
+          },
+          "finalAbsAngleDegrees": {
+            "n": 0,
+            "mean": null,
+            "median": null,
+            "p10": null,
+            "p90": null
+          },
+          "meanAbsX": {
+            "n": 0,
+            "mean": null,
+            "median": null,
+            "p10": null,
+            "p90": null
+          },
+          "meanAbsAngleDegrees": {
+            "n": 0,
+            "mean": null,
+            "median": null,
+            "p10": null,
+            "p90": null
+          },
+          "maxAbsX": {
+            "n": 0,
+            "mean": null,
+            "median": null,
+            "p10": null,
+            "p90": null
+          },
+          "maxAbsVelocity": {
+            "n": 0,
+            "mean": null,
+            "median": null,
+            "p10": null,
+            "p90": null
+          },
+          "meanAbsVelocity": {
+            "n": 0,
+            "mean": null,
+            "median": null,
+            "p10": null,
+            "p90": null
+          },
+          "firstNearRailStep": {
+            "n": 0,
+            "mean": null,
+            "median": null,
+            "p10": null,
+            "p90": null
+          },
+          "nearRailOutwardActionFraction": {
+            "n": 0,
+            "mean": null,
+            "median": null,
+            "p10": null,
+            "p90": null
+          }
+        },
+        "cap": {
+          "n": 97,
+          "fraction": 0.0485,
+          "ci95": [
+            0.03992009344287708,
+            0.05881100025209431
+          ],
+          "cartFailureDirections": {
+            "left": 0,
+            "right": 0
+          },
+          "duration": {
+            "n": 97,
+            "mean": 500,
+            "sd": 0,
+            "se": 0,
+            "ci95": [
+              500,
+              500
+            ],
+            "method": "Normal approximation for the mean, from the sample variance; not a claim that returns or learning curves are Gaussian."
+          },
+          "durationMedian": 500,
+          "finalAbsX": {
+            "n": 97,
+            "mean": 1.1826521518529391,
+            "median": 1.2872492435289318,
+            "p10": 0.26146614109419647,
+            "p90": 2.1096555942138497
+          },
+          "finalAbsAngleDegrees": {
+            "n": 97,
+            "mean": 2.5247495973405227,
+            "median": 2.7212424793034713,
+            "p10": 0.541496075164544,
+            "p90": 4.440514025405975
+          },
+          "meanAbsX": {
+            "n": 97,
+            "mean": 0.40797874726967553,
+            "median": 0.3680814897463089,
+            "p10": 0.1826017600781576,
+            "p90": 0.6868609741497488
+          },
+          "meanAbsAngleDegrees": {
+            "n": 97,
+            "mean": 1.7759615731853062,
+            "median": 1.7654855226895467,
+            "p10": 1.556986418280636,
+            "p90": 1.9929037315565568
+          },
+          "maxAbsX": {
+            "n": 97,
+            "mean": 1.2982090536775142,
+            "median": 1.3546231261054202,
+            "p10": 0.577611199842196,
+            "p90": 2.1096555942138497
+          },
+          "maxAbsVelocity": {
+            "n": 97,
+            "mean": 1.3259205538661933,
+            "median": 1.2918696163057617,
+            "p10": 0.9906065610204832,
+            "p90": 1.671581093294059
+          },
+          "meanAbsVelocity": {
+            "n": 97,
+            "mean": 0.31944344416536363,
+            "median": 0.31593445661351743,
+            "p10": 0.26496053884389703,
+            "p90": 0.3689340948499572
+          },
+          "firstNearRailStep": {
+            "n": 18,
+            "mean": 475.3888888888889,
+            "median": 482,
+            "p10": 451.5,
+            "p90": 496.6
+          },
+          "nearRailOutwardActionFraction": {
+            "n": 18,
+            "mean": 0.49737474675402094,
+            "median": 0.49242424242424243,
+            "p10": 0.41583333333333333,
+            "p90": 0.6743589743589743
+          }
+        }
+      }
+    },
+    {
+      "update": 20,
+      "returns": {
+        "n": 2000,
+        "mean": 198.456,
+        "sd": 41.14116383478766,
+        "se": 0.9199443900804113,
+        "ci95": [
+          196.65294212766273,
+          200.25905787233725
+        ],
+        "method": "Normal approximation for the mean, from the sample variance; not a claim that returns or learning curves are Gaussian."
+      },
+      "returnQuantiles": {
+        "p10": 156.9,
+        "median": 192,
+        "p90": 248
+      },
+      "hit500": {
+        "n": 1,
+        "fraction": 0.0005,
+        "ci95": [
+          0.00008826773070546787,
+          0.0028268625032662133
+        ]
+      },
+      "nonterminalCap": {
+        "n": 1,
+        "fraction": 0.0005,
+        "ci95": [
+          0.00008826773070546787,
+          0.0028268625032662133
+        ]
+      },
+      "causes": {
+        "cart": {
+          "n": 1922,
+          "fraction": 0.961,
+          "ci95": [
+            0.9515939149560816,
+            0.968638567450603
+          ],
+          "cartFailureDirections": {
+            "left": 3,
+            "right": 1919
+          },
+          "duration": {
+            "n": 1922,
+            "mean": 199.30749219562955,
+            "sd": 39.699386217746564,
+            "se": 0.9055388775326568,
+            "ci95": [
+              197.53266860906473,
+              201.08231578219437
+            ],
+            "method": "Normal approximation for the mean, from the sample variance; not a claim that returns or learning curves are Gaussian."
+          },
+          "durationMedian": 192,
+          "finalAbsX": {
+            "n": 1922,
+            "mean": 2.418048027378004,
+            "median": 2.417315307041956,
+            "p10": 2.4031084080789853,
+            "p90": 2.4340301710477075
+          },
+          "finalAbsAngleDegrees": {
+            "n": 1922,
+            "mean": 5.305281877761273,
+            "median": 5.293542622210638,
+            "p10": 1.883765228617391,
+            "p90": 8.69687452259775
+          },
+          "meanAbsX": {
+            "n": 1922,
+            "mean": 0.6758157160361118,
+            "median": 0.6845850323847149,
+            "p10": 0.5475407583474454,
+            "p90": 0.7864377521183137
+          },
+          "meanAbsAngleDegrees": {
+            "n": 1922,
+            "mean": 3.0250619324590833,
+            "median": 2.964336570677816,
+            "p10": 2.4250082791529906,
+            "p90": 3.6992143927514087
+          },
+          "maxAbsX": {
+            "n": 1922,
+            "mean": 2.418048027378004,
+            "median": 2.417315307041956,
+            "p10": 2.4031084080789853,
+            "p90": 2.4340301710477075
+          },
+          "maxAbsVelocity": {
+            "n": 1922,
+            "mean": 2.1637142022991207,
+            "median": 2.179083622790526,
+            "p10": 1.8376703620629589,
+            "p90": 2.5392784118812415
+          },
+          "meanAbsVelocity": {
+            "n": 1922,
+            "mean": 0.7022536431707702,
+            "median": 0.697711546731477,
+            "p10": 0.5823859875342511,
+            "p90": 0.8260188413738264
+          },
+          "firstNearRailStep": {
+            "n": 1922,
+            "mean": 179.6805411030177,
+            "median": 173,
+            "p10": 140,
+            "p90": 227
+          },
+          "nearRailOutwardActionFraction": {
+            "n": 1922,
+            "mean": 0.5404700657789817,
+            "median": 0.5454545454545454,
+            "p10": 0.45,
+            "p90": 0.631578947368421
+          }
+        },
+        "pole": {
+          "n": 75,
+          "fraction": 0.0375,
+          "ci95": [
+            0.030021256563230403,
+            0.04675201217192855
+          ],
+          "cartFailureDirections": {
+            "left": 0,
+            "right": 0
+          },
+          "duration": {
+            "n": 75,
+            "mean": 171.78666666666666,
+            "sd": 52.69963160375196,
+            "se": 6.085229298524061,
+            "ci95": [
+              159.85983640389156,
+              183.71349692944176
+            ],
+            "method": "Normal approximation for the mean, from the sample variance; not a claim that returns or learning curves are Gaussian."
+          },
+          "durationMedian": 166,
+          "finalAbsX": {
+            "n": 75,
+            "mean": 1.6949540120104771,
+            "median": 1.9384247920079425,
+            "p10": 0.6162422147293773,
+            "p90": 2.3211709423902507
+          },
+          "finalAbsAngleDegrees": {
+            "n": 75,
+            "mean": 12.296998731988198,
+            "median": 12.251140644692043,
+            "p10": 12.033081842936433,
+            "p90": 12.638407567682117
+          },
+          "meanAbsX": {
+            "n": 75,
+            "mean": 0.5047901842229534,
+            "median": 0.5631849014083182,
+            "p10": 0.20440249046856374,
+            "p90": 0.7125727871970751
+          },
+          "meanAbsAngleDegrees": {
+            "n": 75,
+            "mean": 3.0274856261863348,
+            "median": 3.0430234878072677,
+            "p10": 2.312071777131513,
+            "p90": 3.6878495649727294
+          },
+          "maxAbsX": {
+            "n": 75,
+            "mean": 1.6961051551214006,
+            "median": 1.9384247920079425,
+            "p10": 0.6169087306274859,
+            "p90": 2.3211709423902507
+          },
+          "maxAbsVelocity": {
+            "n": 75,
+            "mean": 1.632644100483792,
+            "median": 1.6695406699435555,
+            "p10": 1.1537622267372498,
+            "p90": 2.023233762373094
+          },
+          "meanAbsVelocity": {
+            "n": 75,
+            "mean": 0.5738846103485865,
+            "median": 0.595050335186867,
+            "p10": 0.36850112000739454,
+            "p90": 0.7310472952485025
+          },
+          "firstNearRailStep": {
+            "n": 40,
+            "mean": 179.375,
+            "median": 170.5,
+            "p10": 140.5,
+            "p90": 226.50000000000003
+          },
+          "nearRailOutwardActionFraction": {
+            "n": 40,
+            "mean": 0.5471965688954012,
+            "median": 0.5313725490196078,
+            "p10": 0.4334096109839817,
+            "p90": 0.6291666666666668
+          }
+        },
+        "both": {
+          "n": 2,
+          "fraction": 0.001,
+          "ci95": [
+            0.0002742789176520342,
+            0.003638934269038394
+          ],
+          "cartFailureDirections": {
+            "left": 0,
+            "right": 2
+          },
+          "duration": {
+            "n": 2,
+            "mean": 229.5,
+            "sd": 53.033008588991066,
+            "se": 37.5,
+            "ci95": [
+              156.00135057974796,
+              302.99864942025204
+            ],
+            "method": "Normal approximation for the mean, from the sample variance; not a claim that returns or learning curves are Gaussian."
+          },
+          "durationMedian": 229.5,
+          "finalAbsX": {
+            "n": 2,
+            "mean": 2.414021823390467,
+            "median": 2.414021823390467,
+            "p10": 2.4081577000040424,
+            "p90": 2.4198859467768914
+          },
+          "finalAbsAngleDegrees": {
+            "n": 2,
+            "mean": 12.475697143481522,
+            "median": 12.475697143481522,
+            "p10": 12.44301573768373,
+            "p90": 12.508378549279312
+          },
+          "meanAbsX": {
+            "n": 2,
+            "mean": 0.6563016846693238,
+            "median": 0.6563016846693238,
+            "p10": 0.6174914372045747,
+            "p90": 0.695111932134073
+          },
+          "meanAbsAngleDegrees": {
+            "n": 2,
+            "mean": 2.753502971775892,
+            "median": 2.753502971775892,
+            "p10": 2.4027388335501882,
+            "p90": 3.104267110001596
+          },
+          "maxAbsX": {
+            "n": 2,
+            "mean": 2.414021823390467,
+            "median": 2.414021823390467,
+            "p10": 2.4081577000040424,
+            "p90": 2.4198859467768914
+          },
+          "maxAbsVelocity": {
+            "n": 2,
+            "mean": 2.059301811913918,
+            "median": 2.059301811913918,
+            "p10": 1.7689994858707203,
+            "p90": 2.3496041379571153
+          },
+          "meanAbsVelocity": {
+            "n": 2,
+            "mean": 0.6272246467780274,
+            "median": 0.6272246467780274,
+            "p10": 0.5518534271597434,
+            "p90": 0.7025958663963113
+          },
+          "firstNearRailStep": {
+            "n": 2,
+            "mean": 207,
+            "median": 207,
+            "p10": 180.6,
+            "p90": 233.4
+          },
+          "nearRailOutwardActionFraction": {
+            "n": 2,
+            "mean": 0.48148148148148145,
+            "median": 0.48148148148148145,
+            "p10": 0.45185185185185184,
+            "p90": 0.5111111111111111
+          }
+        },
+        "cap": {
+          "n": 1,
+          "fraction": 0.0005,
+          "ci95": [
+            0.00008826773070546787,
+            0.0028268625032662133
+          ],
+          "cartFailureDirections": {
+            "left": 0,
+            "right": 0
+          },
+          "duration": {
+            "n": 1,
+            "mean": 500,
+            "sd": 0,
+            "se": 0,
+            "ci95": [
+              500,
+              500
+            ],
+            "method": "Normal approximation for the mean, from the sample variance; not a claim that returns or learning curves are Gaussian."
+          },
+          "durationMedian": 500,
+          "finalAbsX": {
+            "n": 1,
+            "mean": 1.8547975206641658,
+            "median": 1.8547975206641658,
+            "p10": 1.8547975206641658,
+            "p90": 1.8547975206641658
+          },
+          "finalAbsAngleDegrees": {
+            "n": 1,
+            "mean": 2.8546717863251376,
+            "median": 2.8546717863251376,
+            "p10": 2.8546717863251376,
+            "p90": 2.8546717863251376
+          },
+          "meanAbsX": {
+            "n": 1,
+            "mean": 0.5224215171258225,
+            "median": 0.5224215171258225,
+            "p10": 0.5224215171258225,
+            "p90": 0.5224215171258225
+          },
+          "meanAbsAngleDegrees": {
+            "n": 1,
+            "mean": 2.2421456744911783,
+            "median": 2.2421456744911783,
+            "p10": 2.2421456744911783,
+            "p90": 2.2421456744911783
+          },
+          "maxAbsX": {
+            "n": 1,
+            "mean": 1.8547975206641658,
+            "median": 1.8547975206641658,
+            "p10": 1.8547975206641658,
+            "p90": 1.8547975206641658
+          },
+          "maxAbsVelocity": {
+            "n": 1,
+            "mean": 2.1935529526469475,
+            "median": 2.1935529526469475,
+            "p10": 2.1935529526469475,
+            "p90": 2.1935529526469475
+          },
+          "meanAbsVelocity": {
+            "n": 1,
+            "mean": 0.4766361194903955,
+            "median": 0.4766361194903955,
+            "p10": 0.4766361194903955,
+            "p90": 0.4766361194903955
+          },
+          "firstNearRailStep": {
+            "n": 1,
+            "mean": 498,
+            "median": 498,
+            "p10": 498,
+            "p90": 498
+          },
+          "nearRailOutwardActionFraction": {
+            "n": 1,
+            "mean": 0.5,
+            "median": 0.5,
+            "p10": 0.5,
+            "p90": 0.5
+          }
+        }
+      }
+    },
+    {
+      "update": 40,
+      "returns": {
+        "n": 2000,
+        "mean": 500,
+        "sd": 0,
+        "se": 0,
+        "ci95": [
+          500,
+          500
+        ],
+        "method": "Normal approximation for the mean, from the sample variance; not a claim that returns or learning curves are Gaussian."
+      },
+      "returnQuantiles": {
+        "p10": 500,
+        "median": 500,
+        "p90": 500
+      },
+      "hit500": {
+        "n": 2000,
+        "fraction": 1,
+        "ci95": [
+          0.9980829527187469,
+          0.9999999999999998
+        ]
+      },
+      "nonterminalCap": {
+        "n": 2000,
+        "fraction": 1,
+        "ci95": [
+          0.9980829527187469,
+          0.9999999999999998
+        ]
+      },
+      "causes": {
+        "cart": {
+          "n": 0,
+          "fraction": 0,
+          "ci95": [
+            1.0842021724855044e-19,
+            0.001917047281252934
+          ],
+          "cartFailureDirections": {
+            "left": 0,
+            "right": 0
+          },
+          "duration": {
+            "n": 0,
+            "mean": null,
+            "sd": null,
+            "se": null,
+            "ci95": null
+          },
+          "durationMedian": null,
+          "finalAbsX": {
+            "n": 0,
+            "mean": null,
+            "median": null,
+            "p10": null,
+            "p90": null
+          },
+          "finalAbsAngleDegrees": {
+            "n": 0,
+            "mean": null,
+            "median": null,
+            "p10": null,
+            "p90": null
+          },
+          "meanAbsX": {
+            "n": 0,
+            "mean": null,
+            "median": null,
+            "p10": null,
+            "p90": null
+          },
+          "meanAbsAngleDegrees": {
+            "n": 0,
+            "mean": null,
+            "median": null,
+            "p10": null,
+            "p90": null
+          },
+          "maxAbsX": {
+            "n": 0,
+            "mean": null,
+            "median": null,
+            "p10": null,
+            "p90": null
+          },
+          "maxAbsVelocity": {
+            "n": 0,
+            "mean": null,
+            "median": null,
+            "p10": null,
+            "p90": null
+          },
+          "meanAbsVelocity": {
+            "n": 0,
+            "mean": null,
+            "median": null,
+            "p10": null,
+            "p90": null
+          },
+          "firstNearRailStep": {
+            "n": 0,
+            "mean": null,
+            "median": null,
+            "p10": null,
+            "p90": null
+          },
+          "nearRailOutwardActionFraction": {
+            "n": 0,
+            "mean": null,
+            "median": null,
+            "p10": null,
+            "p90": null
+          }
+        },
+        "pole": {
+          "n": 0,
+          "fraction": 0,
+          "ci95": [
+            1.0842021724855044e-19,
+            0.001917047281252934
+          ],
+          "cartFailureDirections": {
+            "left": 0,
+            "right": 0
+          },
+          "duration": {
+            "n": 0,
+            "mean": null,
+            "sd": null,
+            "se": null,
+            "ci95": null
+          },
+          "durationMedian": null,
+          "finalAbsX": {
+            "n": 0,
+            "mean": null,
+            "median": null,
+            "p10": null,
+            "p90": null
+          },
+          "finalAbsAngleDegrees": {
+            "n": 0,
+            "mean": null,
+            "median": null,
+            "p10": null,
+            "p90": null
+          },
+          "meanAbsX": {
+            "n": 0,
+            "mean": null,
+            "median": null,
+            "p10": null,
+            "p90": null
+          },
+          "meanAbsAngleDegrees": {
+            "n": 0,
+            "mean": null,
+            "median": null,
+            "p10": null,
+            "p90": null
+          },
+          "maxAbsX": {
+            "n": 0,
+            "mean": null,
+            "median": null,
+            "p10": null,
+            "p90": null
+          },
+          "maxAbsVelocity": {
+            "n": 0,
+            "mean": null,
+            "median": null,
+            "p10": null,
+            "p90": null
+          },
+          "meanAbsVelocity": {
+            "n": 0,
+            "mean": null,
+            "median": null,
+            "p10": null,
+            "p90": null
+          },
+          "firstNearRailStep": {
+            "n": 0,
+            "mean": null,
+            "median": null,
+            "p10": null,
+            "p90": null
+          },
+          "nearRailOutwardActionFraction": {
+            "n": 0,
+            "mean": null,
+            "median": null,
+            "p10": null,
+            "p90": null
+          }
+        },
+        "both": {
+          "n": 0,
+          "fraction": 0,
+          "ci95": [
+            1.0842021724855044e-19,
+            0.001917047281252934
+          ],
+          "cartFailureDirections": {
+            "left": 0,
+            "right": 0
+          },
+          "duration": {
+            "n": 0,
+            "mean": null,
+            "sd": null,
+            "se": null,
+            "ci95": null
+          },
+          "durationMedian": null,
+          "finalAbsX": {
+            "n": 0,
+            "mean": null,
+            "median": null,
+            "p10": null,
+            "p90": null
+          },
+          "finalAbsAngleDegrees": {
+            "n": 0,
+            "mean": null,
+            "median": null,
+            "p10": null,
+            "p90": null
+          },
+          "meanAbsX": {
+            "n": 0,
+            "mean": null,
+            "median": null,
+            "p10": null,
+            "p90": null
+          },
+          "meanAbsAngleDegrees": {
+            "n": 0,
+            "mean": null,
+            "median": null,
+            "p10": null,
+            "p90": null
+          },
+          "maxAbsX": {
+            "n": 0,
+            "mean": null,
+            "median": null,
+            "p10": null,
+            "p90": null
+          },
+          "maxAbsVelocity": {
+            "n": 0,
+            "mean": null,
+            "median": null,
+            "p10": null,
+            "p90": null
+          },
+          "meanAbsVelocity": {
+            "n": 0,
+            "mean": null,
+            "median": null,
+            "p10": null,
+            "p90": null
+          },
+          "firstNearRailStep": {
+            "n": 0,
+            "mean": null,
+            "median": null,
+            "p10": null,
+            "p90": null
+          },
+          "nearRailOutwardActionFraction": {
+            "n": 0,
+            "mean": null,
+            "median": null,
+            "p10": null,
+            "p90": null
+          }
+        },
+        "cap": {
+          "n": 2000,
+          "fraction": 1,
+          "ci95": [
+            0.9980829527187469,
+            0.9999999999999998
+          ],
+          "cartFailureDirections": {
+            "left": 0,
+            "right": 0
+          },
+          "duration": {
+            "n": 2000,
+            "mean": 500,
+            "sd": 0,
+            "se": 0,
+            "ci95": [
+              500,
+              500
+            ],
+            "method": "Normal approximation for the mean, from the sample variance; not a claim that returns or learning curves are Gaussian."
+          },
+          "durationMedian": 500,
+          "finalAbsX": {
+            "n": 2000,
+            "mean": 0.6535186694835718,
+            "median": 0.6182949798172497,
+            "p10": 0.14685227275549326,
+            "p90": 1.1819806698927233
+          },
+          "finalAbsAngleDegrees": {
+            "n": 2000,
+            "mean": 1.0455261826210156,
+            "median": 0.8576143250123496,
+            "p10": 0.15333407497636647,
+            "p90": 2.1995578843471466
+          },
+          "meanAbsX": {
+            "n": 2000,
+            "mean": 0.493998551129266,
+            "median": 0.4764664567395178,
+            "p10": 0.2409020034814002,
+            "p90": 0.7715060130690038
+          },
+          "meanAbsAngleDegrees": {
+            "n": 2000,
+            "mean": 1.0221822885495258,
+            "median": 1.0153674975515967,
+            "p10": 0.8864522889742349,
+            "p90": 1.1703387548871116
+          },
+          "maxAbsX": {
+            "n": 2000,
+            "mean": 1.0004784543822738,
+            "median": 0.9872623838098051,
+            "p10": 0.5598688901407006,
+            "p90": 1.4851549943677766
+          },
+          "maxAbsVelocity": {
+            "n": 2000,
+            "mean": 0.8816743998620723,
+            "median": 0.9002710947752863,
+            "p10": 0.7411986672291008,
+            "p90": 1.0894997189497084
+          },
+          "meanAbsVelocity": {
+            "n": 2000,
+            "mean": 0.23330541062744284,
+            "median": 0.2258076465748582,
+            "p10": 0.19543016152382636,
+            "p90": 0.28179828208516816
+          },
+          "firstNearRailStep": {
+            "n": 37,
+            "mean": 365.86486486486484,
+            "median": 367,
+            "p10": 287,
+            "p90": 441
+          },
+          "nearRailOutwardActionFraction": {
+            "n": 37,
+            "mean": 0.45123585454903636,
+            "median": 0.47435897435897434,
+            "p10": 0.4128949065119278,
+            "p90": 0.48830336478547265
+          }
+        }
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "from": 14,
+      "to": 15,
+      "direction": "B minus A",
+      "n": 2000,
+      "mean": -146.8025,
+      "sd": 101.83155860004035,
+      "se": 2.2770228728444355,
+      "ci95": [
+        -151.26538282274902,
+        -142.339617177251
+      ],
+      "method": "Normal approximation for the mean, from the sample variance; not a claim that returns or learning curves are Gaussian."
+    },
+    {
+      "from": 14,
+      "to": 16,
+      "direction": "B minus A",
+      "n": 2000,
+      "mean": -163.326,
+      "sd": 101.65362981333763,
+      "se": 2.273044264222222,
+      "ci95": [
+        -167.7810848931409,
+        -158.8709151068591
+      ],
+      "method": "Normal approximation for the mean, from the sample variance; not a claim that returns or learning curves are Gaussian."
+    },
+    {
+      "from": 16,
+      "to": 18,
+      "direction": "B minus A",
+      "n": 2000,
+      "mean": 153.272,
+      "sd": 106.86072067327363,
+      "se": 2.3894783555005694,
+      "ci95": [
+        148.58870848138088,
+        157.9552915186191
+      ],
+      "method": "Normal approximation for the mean, from the sample variance; not a claim that returns or learning curves are Gaussian."
+    },
+    {
+      "from": 19,
+      "to": 20,
+      "direction": "B minus A",
+      "n": 2000,
+      "mean": -88.524,
+      "sd": 79.07667155357504,
+      "se": 1.7682081302821768,
+      "ci95": [
+        -91.98962425252398,
+        -85.05837574747602
+      ],
+      "method": "Normal approximation for the mean, from the sample variance; not a claim that returns or learning curves are Gaussian."
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "runCount": 128,
+  "uniqueSeeds": true,
+  "allHistoriesAligned": true,
+  "allScoresRecomputedFromFullEpisodes": true,
+  "allEvaluations20Episodes": true,
+  "allMembershipsUnique": true,
+  "sourceHashMatches": true,
+  "replaySeed": 189998643,
+  "replayExactly": true
+}

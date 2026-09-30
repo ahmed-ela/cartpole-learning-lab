@@ -1,0 +1,38 @@
+{
+  "definition": "Centering effect on the update14→15 change: (afterCentered−beforeCentered)−(afterOriginal−beforeOriginal). Same1500 matchedstarts/actiondraws.",
+  "originalChange": {
+    "direction": "B minus A",
+    "n": 1500,
+    "mean": -148.58933333333334,
+    "sd": 103.20018510170198,
+    "se": 2.664617321496097,
+    "ci95": [
+      -153.8118873160473,
+      -143.3667793506194
+    ],
+    "method": "Normal approximation for the mean, from the sample variance; not a claim that returns or learning curves are Gaussian."
+  },
+  "centeredChange": {
+    "direction": "B minus A",
+    "n": 1500,
+    "mean": -3.95,
+    "sd": 86.82844552699895,
+    "se": 2.2419008233542987,
+    "ci95": [
+      -8.34404487068512,
+      0.44404487068511944
+    ],
+    "method": "Normal approximation for the mean, from the sample variance; not a claim that returns or learning curves are Gaussian."
+  },
+  "interaction": {
+    "n": 1500,
+    "mean": 144.63933333333333,
+    "sd": 127.80120246352521,
+    "se": 3.2998128584434365,
+    "ci95": [
+      138.17181897506202,
+      151.10684769160463
+    ],
+    "method": "Normal approximation for the mean, from the sample variance; not a claim that returns or learning curves are Gaussian."
+  }
+}

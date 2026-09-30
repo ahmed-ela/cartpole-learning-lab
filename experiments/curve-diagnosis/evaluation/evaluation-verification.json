@@ -1,0 +1,9 @@
+{
+  "uniqueEpisodeSeeds": true,
+  "checkpoints": 26,
+  "episodesPerCheckpoint": true,
+  "causesPartition": true,
+  "meansMatch": true,
+  "physicalCausesMatch": true,
+  "sharedStartStates": true
+}
